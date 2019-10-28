@@ -8,7 +8,7 @@ script:
 addons:
   chrome: stable
 before_install:
-  - google-chrome-stable: --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
+  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
 before_script:
   - "sudo chown root /opt/google/chome/chrome-sandbox"
   - "sudo chmod 4755 /opt/google/chome/chrome-sandbox"
