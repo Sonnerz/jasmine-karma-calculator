@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <script src="calculator.js"></script>
+  <script src="main.js"></script>
+  <script>
+    window.onload = function () {
+      showVersion();
+    }
+  </script>
+</head>
+
+<body class="body">
+  <h1 class="title">Simple calculator</h1>
+
+  <input class="input" type="text" title="calculator" placeholder="Enter operation" value="1+2"
+    onchange="calculate(this.value)" />
+
+  <div class="result-container">
+    <div class="title">Result</div>
+    <span id="result">3</span>
+  </div>
+
+  <!-- use for testing the getter and setter -->
+  <div class="version">Version <span id="version"></span></div>
+</body>
+
+</html>
